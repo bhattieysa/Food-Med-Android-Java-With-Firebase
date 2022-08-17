@@ -7,16 +7,17 @@
         android:state_checked="true"
 
         android:title="@string/title_home" />
-
-    <item
-        android:id="@+id/navigation_categories"
-        android:icon="@drawable/categories"
-        android:title="@string/title_dashboard" />
-
     <item
         android:id="@+id/navigation_products"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_product" />
+
+    <item
+        android:id="@+id/navigation_viewProducts"
+        android:icon="@drawable/categories"
+        android:title="View Products" />
+
+
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/profile"

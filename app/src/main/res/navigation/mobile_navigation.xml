@@ -7,24 +7,24 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.handicrafthorizon.Admin.ui.home.HomeFragment"
+        android:name="com.example.foodmed.Admin.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_categories"
-        android:name="com.example.handicrafthorizon.Admin.ui.categories.CategoriesFragment"
+        android:id="@+id/navigation_viewProducts"
+        android:name="com.example.foodmed.Admin.ui.products.ViewProductsFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_categories" />
+        tools:layout="@layout/fragment_view_products" />
 
     <fragment
         android:id="@+id/navigation_products"
-        android:name="com.example.handicrafthorizon.Admin.ui.products.ProductsFragment"
+        android:name="com.example.foodmed.Admin.ui.products.ProductsFragment"
         android:label="@string/title_product"
         tools:layout="@layout/fragment_products" />
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.handicrafthorizon.Admin.ui.products.ProductsFragment"
+        android:name="com.example.foodmed.Admin.ui.products.ProductsFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 </navigation>

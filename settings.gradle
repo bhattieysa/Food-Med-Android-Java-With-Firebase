@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Handicraft Horizon"
+rootProject.name = "FOOD MED"
 include ':app'

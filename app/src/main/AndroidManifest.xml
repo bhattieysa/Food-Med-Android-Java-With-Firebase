@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.handicrafthorizon">
+    package="com.example.foodmed">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,28 +13,30 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HandicraftHorizon"
+        android:theme="@style/Theme.FoodMed"
         tools:targetApi="31">
         <activity
-            android:name=".User.UserDashboard"
+            android:name="com.example.foodmed.User.UserDashboard"
             android:exported="false"
-            android:theme="@style/Theme.HandicraftHorizon"
+            android:theme="@style/Theme.FoodMedActionbar"
             />
         <activity
-            android:name=".Admin.AdminDashboard"
+            android:name="com.example.foodmed.Admin.AdminDashboard"
             android:exported="false"
             android:label="@string/title_activity_admin_dashboard"
-            android:theme="@style/Theme.HandicraftHorizon" />
+            android:theme="@style/Theme.FoodMedActionbar" />
         <activity
-            android:name=".Signup"
+            android:name="com.example.foodmed.Signup"
+            android:theme="@style/Theme.FoodMedActionbar"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name="com.example.foodmed.Login"
+            android:theme="@style/Theme.FoodMedActionbar"
             android:exported="false" />
         <activity
-            android:name=".Splash"
+            android:name="com.example.foodmed.Splash"
             android:exported="true"
-            android:theme="@style/Theme.HandicraftHorizon">
+            android:theme="@style/Theme.FoodMed">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.foodmed.MainActivity"
             android:exported="false" />
     </application>
 

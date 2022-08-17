@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "101197553661",
-    "project_id": "handcraft-60c34",
-    "storage_bucket": "handcraft-60c34.appspot.com"
+    "project_number": "363517711357",
+    "project_id": "foodmed-8c196",
+    "storage_bucket": "foodmed-8c196.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:101197553661:android:8205c3559ab263afb8c394",
+        "mobilesdk_app_id": "1:363517711357:android:a0863b75a899795ee37f94",
         "android_client_info": {
-          "package_name": "com.example.handicrafthorizon"
+          "package_name": "com.example.foodmed"
         }
       },
       "oauth_client": [
         {
-          "client_id": "101197553661-qln4hpapr2s4nqoegorhmnbv51qepcmu.apps.googleusercontent.com",
+          "client_id": "363517711357-0nv708kgajh3li4hsm6ha1f2sv26h43j.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAR1p5GqCM_Lf5bcjkq-xympb2IdL5-Dhc"
+          "current_key": "AIzaSyBj3uC3mJPBn9UZqCxYvsphtI-tuWZzKvw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "101197553661-qln4hpapr2s4nqoegorhmnbv51qepcmu.apps.googleusercontent.com",
+              "client_id": "363517711357-0nv708kgajh3li4hsm6ha1f2sv26h43j.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
