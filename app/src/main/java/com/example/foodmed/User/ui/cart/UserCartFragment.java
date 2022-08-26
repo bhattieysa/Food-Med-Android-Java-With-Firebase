@@ -97,10 +97,15 @@ TotalPrice=0;
                     String user_id = dataSnapshot.child("user_id").getValue(String.class);
                     String product_id = dataSnapshot.child("product_id").getValue(String.class);
 
-                    assert quantity != null;
-                    int intQuantity=Integer.parseInt(quantity);
-                    assert price != null;
-                    Integer total1= Integer.parseInt(price)*intQuantity;
+
+                    int intQuantity= 0;
+                    if (quantity != null) {
+                        intQuantity = Integer.parseInt(quantity);
+                    }
+                    int total1= 0;
+                    if (price != null) {
+                        total1 = Integer.parseInt(price)*intQuantity;
+                    }
 
                     Log.d("eysa", String.valueOf(total1));
 
