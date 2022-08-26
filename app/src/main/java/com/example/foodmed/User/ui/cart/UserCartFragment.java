@@ -49,7 +49,7 @@ public class UserCartFragment extends Fragment {
 
     Button placeorder;
     TextView total;
-    Integer TotalPrice;
+    int TotalPrice;
     Integer Quantity=1;
 
     @Override
@@ -111,7 +111,7 @@ TotalPrice=0;
 
 
                         TotalPrice = TotalPrice + total1;
-                        total.setText(TotalPrice.toString());
+                        total.setText(String.valueOf(TotalPrice));
 
 
 
