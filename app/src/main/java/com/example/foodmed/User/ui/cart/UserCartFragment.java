@@ -56,7 +56,7 @@ public class UserCartFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
+        container.removeAllViews();
         View v1= inflater.inflate(R.layout.fragment_user_cart, container, false);
         recyclerView=v1.findViewById(R.id.recyclerview);
         placeorder=v1.findViewById(R.id.place_order);
