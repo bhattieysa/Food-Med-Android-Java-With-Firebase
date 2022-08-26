@@ -50,7 +50,7 @@ public class UserCartFragment extends Fragment {
     Button placeorder;
     TextView total;
     int TotalPrice;
-    Integer Quantity=1;
+    int Quantity=1;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
