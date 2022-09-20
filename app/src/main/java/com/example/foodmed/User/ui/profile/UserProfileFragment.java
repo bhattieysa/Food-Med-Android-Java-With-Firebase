@@ -69,7 +69,7 @@ feedback.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
         Intent mailIntent = new Intent(Intent.ACTION_SENDTO);
-        Uri data = Uri.parse("mailto:?subject=" + "Feed Back From Food MED"+ "&body=" + "body text " + "&to=" + "destination@mail.com");
+        Uri data = Uri.parse("mailto:?subject=" + "Feed Back From Food MED"+ "&body=" + "body text " + "&to=" + "bushra101012@gmail.com");
         mailIntent.setData(data);
         startActivity(Intent.createChooser(mailIntent, "Send mail..."));
     }
