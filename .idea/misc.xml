@@ -32,7 +32,7 @@
         <entry key="app/src/main/res/layout/fragment_user_cart.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_user_home.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_user_order.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_user_profile.xml" value="0.43854166666666666" />
+        <entry key="app/src/main/res/layout/fragment_user_profile.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_user_view_products.xml" value="0.38266384778012685" />
         <entry key="app/src/main/res/layout/fragment_view_categories.xml" value="0.43854166666666666" />
         <entry key="app/src/main/res/layout/fragment_view_products.xml" value="0.25" />

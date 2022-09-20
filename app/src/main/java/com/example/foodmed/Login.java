@@ -185,26 +185,26 @@ public class Login extends AppCompatActivity {
                                     progressDialog.dismiss();
 
 
-                              String type=td.get("type").toString();
-                              if(type.equals("User")){
-                                  Toast.makeText(Login.this, "Login Successfull",
-                                          Toast.LENGTH_SHORT).show();
-                                  Intent intent=new Intent(Login.this, UserDashboard.class);
-                                  startActivity(intent);
-                                  finish();
+                                    String type=td.get("type").toString();
+                                    if(type.equals("User")){
+                                        Toast.makeText(Login.this, "Login Successfull",
+                                                Toast.LENGTH_SHORT).show();
+                                        Intent intent=new Intent(Login.this, UserDashboard.class);
+                                        startActivity(intent);
+                                        finish();
 
 
 
-                              }else{
+                                    }else{
 
-                                  Toast.makeText(Login.this, "Login Successfull",
-                                          Toast.LENGTH_SHORT).show();
-                                  Intent intent=new Intent(Login.this, AdminDashboard.class);
-                                  startActivity(intent);
-                                  finish();
+                                        Toast.makeText(Login.this, "Login Successfull",
+                                                Toast.LENGTH_SHORT).show();
+                                        Intent intent=new Intent(Login.this, AdminDashboard.class);
+                                        startActivity(intent);
+                                        finish();
 
 
-                              }
+                                    }
 
 
                                 }

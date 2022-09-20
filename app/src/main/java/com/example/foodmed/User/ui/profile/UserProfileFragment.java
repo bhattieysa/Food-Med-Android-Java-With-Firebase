@@ -2,6 +2,7 @@ package com.example.foodmed.User.ui.profile;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,7 +30,7 @@ import java.util.Map;
 
 public class UserProfileFragment extends Fragment {
 
-    TextView name,email,password;
+    TextView name,email,password,feedback;
     Button logout;
     FirebaseDatabase database;
     DatabaseReference myRef;
@@ -45,6 +46,7 @@ public class UserProfileFragment extends Fragment {
         email=v1.findViewById(R.id.textView3);
         password=v1.findViewById(R.id.textView4);
         logout=v1.findViewById(R.id.logout);
+        feedback=v1.findViewById(R.id.textView13);
         progressDialog=new ProgressDialog(getActivity());
         progressDialog.setMessage("Loading");
         progressDialog.show();
@@ -63,7 +65,15 @@ public class UserProfileFragment extends Fragment {
             }
         });
 
-
+feedback.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent mailIntent = new Intent(Intent.ACTION_SENDTO);
+        Uri data = Uri.parse("mailto:?subject=" + "Feed Back From Food MED"+ "&body=" + "body text " + "&to=" + "destination@mail.com");
+        mailIntent.setData(data);
+        startActivity(Intent.createChooser(mailIntent, "Send mail..."));
+    }
+});
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();

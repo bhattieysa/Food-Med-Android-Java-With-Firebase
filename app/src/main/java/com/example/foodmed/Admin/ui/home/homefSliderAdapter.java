@@ -17,7 +17,7 @@ public class homefSliderAdapter extends PagerAdapter {
     Context context;
     LayoutInflater layoutInflater;
     int[] images= {R.drawable.logo,R.drawable.s1,R.drawable.s3,
-            R.drawable.s4};
+            R.drawable.s4,R.drawable.s5};
 
     public homefSliderAdapter(Context context) {
         this.context = context;

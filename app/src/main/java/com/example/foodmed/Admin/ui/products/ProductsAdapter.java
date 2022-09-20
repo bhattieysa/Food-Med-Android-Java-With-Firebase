@@ -100,7 +100,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.MyView
 
 
 
-
+                photoRef = FirebaseStorage.getInstance().getReferenceFromUrl( holder.Image);
 
                 applesQuery = databaseReference.orderByChild("id").equalTo(holder.id);
                 alertDialog= new AlertDialog.Builder(mCtx)
