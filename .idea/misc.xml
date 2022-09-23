@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ali Mirza/StudioProjects/Food-Med-Android-Java-With-Firebase/app/src/main/res/layout/fragment_user_view_products.xml" value="0.2" />
         <entry key="app/src/main/res/drawable/bnv_tab_item_foreground.xml" value="0.296" />
         <entry key="app/src/main/res/drawable/et_bg.xml" value="0.326" />
         <entry key="app/src/main/res/drawable/image.xml" value="0.346" />
@@ -32,7 +33,7 @@
         <entry key="app/src/main/res/layout/fragment_user_cart.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_user_home.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_user_order.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_user_profile.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_user_profile.xml" value="0.43854166666666666" />
         <entry key="app/src/main/res/layout/fragment_user_view_products.xml" value="0.38266384778012685" />
         <entry key="app/src/main/res/layout/fragment_view_categories.xml" value="0.43854166666666666" />
         <entry key="app/src/main/res/layout/fragment_view_products.xml" value="0.25" />

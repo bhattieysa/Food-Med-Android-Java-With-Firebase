@@ -21,6 +21,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.Target;
 import com.example.foodmed.R;
+import com.example.foodmed.User.ui.cart.CartModel;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -107,16 +110,20 @@ this.database=database;
                                     mAuth = FirebaseAuth.getInstance();
                                     FirebaseUser user = mAuth.getCurrentUser();
 
-                                    String mGroupId = database.getReference().push().getKey();
-                                    database.getReference().child("cart").child(mGroupId).child("id").setValue(mGroupId);
-                                    database.getReference().child("cart").child(mGroupId).child("user_id").setValue(user.getUid());
-                                    database.getReference().child("cart").child(mGroupId).child("product_id").setValue(holder.id);
-                                    database.getReference().child("cart").child(mGroupId).child("quantity").setValue("1");
-                                    database.getReference().child("cart").child(mGroupId).child("name").setValue(holder.Name);
-                                    database.getReference().child("cart").child(mGroupId).child("image").setValue(holder.Image);
-                                    database.getReference().child("cart").child(mGroupId).child("price").setValue(holder.Price);
-                                    Toast.makeText(mCtx,"Add To Cart Successful",Toast.LENGTH_LONG).show();
-                                    progressDialog.dismiss();
+
+
+                                    CartModel model = new CartModel(holder.Image, holder.Name,"",user.getUid(), holder.id, holder.Price, "1");
+                                    FirebaseDatabase.getInstance().getReference("cart")
+                                            .child(user.getUid()).child(holder.Name).setValue(model)
+                                            .addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                @Override
+                                                public void onComplete(@NonNull Task<Void> task) {
+                                                    Toast.makeText(mCtx,"Add To Cart Successful",Toast.LENGTH_LONG).show();
+                                                    progressDialog.dismiss();
+
+                                                }
+                                            });
+
                                 }
                             }
 
@@ -129,6 +136,36 @@ this.database=database;
 
             }
         });
+
+//        holder.favimg.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                //adding into my favorites table in DB
+//                holder.favimg.setBackgroundResource(fav_image_fill);
+//                //storing user data to firebase realtime database
+//                HallRegistrationModel haalmodel = new HallRegistrationModel
+//                        (holder.hname.getText().toString(),holder.address,
+//                                holder.hcontact.getText().toString(), holder.in, holder.out,
+//                                holder.hcap.getText().toString(), holder.desc, holder.rent,
+//                                holder.pav, holder.dec, holder.image, "");
+//                FirebaseDatabase.getInstance().getReference("Favorites")
+//                        .child(firebaseUser.getUid()).child(holder.hname.getText().toString()).setValue(haalmodel)
+//                        .addOnCompleteListener(new OnCompleteListener<Void>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<Void> task) {
+//                                Toast.makeText(ctx, "Added To Favorites", Toast.LENGTH_SHORT).show();
+//
+//                            }
+//                        });
+//
+//
+//
+//
+//
+//            }
+//        });
+
 
 
 
